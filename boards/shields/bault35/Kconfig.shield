@@ -1,0 +1,3 @@
+config SHIELD_bault35
+    def_bool $(shields_list_contains,bault35)
+
