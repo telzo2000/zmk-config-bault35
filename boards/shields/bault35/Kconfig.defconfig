@@ -1,7 +1,0 @@
-if SHIELD_bault35
-
-config ZMK_KEYBOARD_NAME
-    default "bault35"
-
-
-endif

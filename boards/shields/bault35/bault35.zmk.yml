@@ -1,8 +1,0 @@
-file_format: "1"
-id: bault35
-name: bault35
-type: shield
-url: https://github.com/telzo2000/zmk-config-bault35
-requires: [seeeduino_xiao_ble]
-features:
-  - keys
