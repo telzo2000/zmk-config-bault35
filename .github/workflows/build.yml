@@ -1,6 +1,15 @@
-name: Build ZMK firmware
+name: Build
+
 on: [push, pull_request, workflow_dispatch]
 
 jobs:
   build:
     uses: zmkfirmware/zmk/.github/workflows/build-user-config.yml@v0.3
+    with:
+      # ここが重要：strategy ではなく build_matrix を使う、あるいは strategy の階層を直す
+      # v0.3 の標準的なテンプレートに従う場合：
+      build_matrix: |
+        [
+          { "board": "nice_nano_v2", "shield": "bault_left" },
+          { "board": "nice_nano_v2", "shield": "bault_right" }
+        ]
